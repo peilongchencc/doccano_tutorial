@@ -146,7 +146,7 @@ http://8.140.203.xxx:8000
 
 5. 勾选 "Allow overlapping spans"，即允许重叠；
 
-![](./allow_overlapping_spans.jpg)
+![](./docs/allow_overlapping_spans.jpg)
 
 6. 勾选 "use relation labeling"，即使用关系标记；
 
@@ -164,7 +164,7 @@ http://8.140.203.xxx:8000
 
 笔者是这几项全部勾选的，图示如下:<br>
 
-![](./click_all_options.jpg)
+![](./docs/click_all_options.jpg)
 
 10. 点击 "create" 创建项目。
 
@@ -179,7 +179,7 @@ doccano的文件上传与下载功能开启后，点击左侧菜单栏的 "Datas
 
 doccano支持多种数据导入方式，笔者推荐的是 **"TextLine"** 方式。<br>
 
-![](./import_dataset.jpg)
+![](./docs/import_dataset.jpg)
 
 上传的文件格式依旧为txt，但要注意内容为每一条数据占据一行，例如:<br>
 
@@ -194,33 +194,33 @@ doccano支持多种数据导入方式，笔者推荐的是 **"TextLine"** 方式
 
 > 图片中数据的顺序是随机的，这是因为笔者在创建项目时勾选了 "Randomize document order"，即文档随机排序；
 
-![](./split_doc.jpg)
+![](./docs/split_doc.jpg)
 
 
 ## 建立标签和关系:
 
 🚨🚨🚨声明:由于doccano本身的缘故，左侧菜单栏的 "Relations" 按钮点击会报错。这个并不影响doccano本身的使用，因为 "Relation" 功能被包含在了 "Labels" 模块中。<br>
 
-![](./click_relations.jpg)
+![](./docs/click_relations.jpg)
 
 创建labels和relations很简单，没什么可讲的，具体可参考下图:<br>
 
-![](./create_labels_and_relations.jpg)
+![](./docs/create_labels_and_relations.jpg)
 
 
 ## 标注数据:
 
 标签和关系创建好后，点击 "Dataset" 返回数据集界面。选择你要标注的数据，点击 "Annotate"(标注) 即可开始标注数据。具体标注方式可参考下图:<br>
 
-![](./annotate_progress.jpg)
+![](./docs/annotate_progress.jpg)
 
 注意: 当点击标签或关系后，每次选中内容会自动执行标注操作，不再有选项。相当于快速标注，示意图如下:<br>
 
-![](./fast_annotate.jpg)
+![](./docs/fast_annotate.jpg)
 
 数据标注好后，可参考下图操作，区分 "完成" 与 "进行中" 的任务:<br>
 
-![](./status_translate.jpg)
+![](./docs/status_translate.jpg)
 
 
 ## 导出文件：
@@ -229,7 +229,7 @@ doccano 导出的 JSONL 文件中，每个实体和关系都有一个独特的 i
 
 选择需要的数据，然后点击 "Export Dataset"，"File format" 选择 "JSONL" (暂时doccano只提供了JSONL这一种导出方式)，看个人需求勾选 "Export only approved documents" ，然后点击 "Export" 即可将文件下载到本地(zip格式，需要解压):<br>
 
-![](./export_dataset.jpg)
+![](./docs/export_dataset.jpg)
 
 勾选 "Export only approved documents" (仅导出已审核的文档)，效果如下:<br>
 
@@ -443,17 +443,17 @@ Password:Flameaway3.
 
 4. 点击 "SAVE"，然后开始配置权限:
 
-![](./set_permissions.jpg)
+![](./docs/set_permissions.jpg)
 
 5. 权限设置成功后点击 "SAVE"，即可看到以下界面:
 
-![](./user_info.jpg)
+![](./docs/user_info.jpg)
 
 6. 关闭管理员站点，刷新doccano主页，找到你的项目，点击 "Members"；
 
 7. 点击 "Add" ，拉取用户到当前项目，并设置用户角色。点击 "Save"；
 
-![](./set_role.jpg)
+![](./docs/set_role.jpg)
 
 现在新用户已经拉到你指定的项目中了，他可以和你协作标注了。<br>
 
